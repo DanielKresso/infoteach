@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #212121;
+  overflow: hidden; 
+}
+
+.messages{
+  width: auto; /* Adjust width as needed */
+  height: 500px; /* Adjust height as needed */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  margin-bottom: 100px;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+.messages::-webkit-scrollbar {
+  width: 0; /* Set width to 0 to hide scrollbar */
+  height: 0; /* Set height to 0 to hide scrollbar */
+  display: none; /* Hide scrollbar for Webkit browsers */
+}
+.message{
+  margin: 10px 40px 10px 40px;
+  padding: 20px;
+  background-color: #121212;
+  border: 1px solid #555;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  color:white;
+}
+strong{
+  color:yellow;
+}
+.Assistant{
+  color: purple;
+}
+.avatar{
+  border-radius: 25%;
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+.time{
+  font-size: 75%;
+  color:yellow
+}
+button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #594bda99;
+}
+.clearButton{
+  background-color: gray;
+  color: white;
+  margin-left: 4px;
+}
+.sendButton{
+  background-color: #4CAF50;
+  color: white;
+  margin-left: 4px;
+}
+.googleButton{
+  background-color: #4CAF50;
+  color: white;
+  margin-left: 4px;
+}
+.inputs{
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 75%;
+}
+input{
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #121212;
+  color: white;
+  width: 70%; /* Adjust width as needed */
+}
+input::placeholder {
+  color: #ccc; /* Placeholder text color */
+}
